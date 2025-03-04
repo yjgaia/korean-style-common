@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  background-color: var(--page-bg-color);
+}
+
+html,
+body {
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+}
+
+body {
+  color: var(--paragraph-text-color);
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size  : 15px;
+  font-weight: 400;
+
+  font-smoothing        : antialiased;
+  -webkit-font-smoothing: antialiased;
+
+  container-type: inline-size;
+}
