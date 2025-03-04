@@ -1,0 +1,27 @@
+button,
+a.button {
+  background-color: var(--primary-color);
+  color           : #000;
+  font-weight     : 600;
+
+  width : 260px;
+  height: 48px;
+
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  transition: background-color 0.2s linear;
+
+  @media (pointer: fine) {
+    &:hover {
+      background-color: #e2c400;
+    }
+  }
+
+  &:active {
+    background-color: #e2c400;
+  }
+}
