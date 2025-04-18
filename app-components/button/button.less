@@ -10,6 +10,10 @@ a.button {
   align-items    : center;
   justify-content: center;
 
+  padding-left : 22px;
+  padding-right: 22px;
+  min-height   : 50px;
+
   border-radius: 8px;
 
   transition: background-color 0.2s linear;
@@ -33,6 +37,25 @@ a.button {
         height       : 100%;
         border-radius: 50%;
       }
+    }
+  }
+
+  &.contained {
+    background-color: var(--contained-button-bg-color);
+    color           : var(--contained-button-text-color);
+
+    @media (pointer: fine) {
+      &:hover {
+        background-color: var(--contained-button-hover-bg-color);
+      }
+    }
+
+    &:active {
+      background-color: var(--contained-button-hover-bg-color);
+    }
+
+    &.disabled {
+      background-color: var(--contained-button-disabled-bg-color);
     }
   }
 
