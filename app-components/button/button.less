@@ -59,6 +59,28 @@ a.button {
     }
   }
 
+  &.outlined {
+    border          : 1px solid var(--outlined-button-border-color);
+    background-color: var(--outlined-button-bg-color);
+    color           : var(--outlined-button-text-color);
+
+    @media (pointer: fine) {
+      &:hover:not(.disabled) {
+        border-color    : var(--outlined-button-hover-border-color);
+        background-color: var(--outlined-button-hover-bg-color);
+      }
+    }
+
+    &:active:not(.disabled) {
+      border-color    : var(--outlined-button-hover-border-color);
+      background-color: var(--outlined-button-hover-bg-color);
+    }
+
+    &.disabled {
+      background-color: var(--outlined-button-disabled-bg-color);
+    }
+  }
+
   &.icon {
     width        : 32px;
     height       : 32px;
