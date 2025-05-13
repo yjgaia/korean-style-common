@@ -1,0 +1,34 @@
+.select {
+  display       : flex;
+  flex-direction: column;
+  gap           : 9px;
+
+  &.required>.label::after {
+    content    : '*';
+    margin-left: 3px;
+  }
+
+  >.label {
+    font-size: 15.14px;
+  }
+
+  >select {
+    display    : flex;
+    align-items: center;
+
+    width  : 100%;
+    height : 40px;
+    padding: 0 13.5px;
+
+    border       : 1px solid var(--input-border-color);
+    border-radius: 4.5px;
+
+    &:focus {
+      border-color: var(--input-focus-border-color);
+    }
+
+    &:hover {
+      border-color: var(--input-hover-border-color);
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.input {
+  position      : relative;
+  display       : flex;
+  flex-direction: column;
+  gap           : 9px;
+
+  &.required>.label::after {
+    content    : '*';
+    margin-left: 3px;
+  }
+
+  >.label {
+    font-size: 15.14px;
+  }
+
+  >input,
+  >textarea {
+    width    : 100%;
+    font-size: 18px;
+
+    border       : 1px solid var(--input-border-color);
+    border-radius: 4.5px;
+
+    &:focus {
+      border-color: var(--input-focus-border-color);
+    }
+
+    &:hover {
+      border-color: var(--input-hover-border-color);
+    }
+  }
+
+  >input {
+    height : 40px;
+    padding: 0 13.5px;
+  }
+
+  >textarea {
+    height : 100px;
+    padding: 13.5px;
+    resize : vertical;
+  }
+
+  &:has(.suffix-icon) {
+
+    >input,
+    >textarea {
+      padding-right: 40px;
+    }
+  }
+
+  >.suffix-icon {
+    position: absolute;
+    right   : 13.5px;
+    bottom  : 13.5px;
+
+    >.icon {
+      display: flex;
+    }
+  }
+}
