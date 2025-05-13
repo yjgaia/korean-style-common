@@ -1,0 +1,30 @@
+.logged-in-user-avatar-menu {
+  >header {
+    margin-bottom: 8px;
+
+    >.user-info {
+      display    : flex;
+      align-items: center;
+      padding    : 0 8px;
+      gap        : 16px;
+      cursor     : pointer;
+      transition : opacity 0.2s;
+      font-size  : 14px;
+
+      >.avatar {
+        width : 32px;
+        height: 32px;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      >.user-details {
+        >.username {
+          color: var(--avatar-menu-username-color);
+        }
+      }
+    }
+  }
+}
